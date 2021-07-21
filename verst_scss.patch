@@ -1,0 +1,392 @@
+Index: src/styles/base/_fonts.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/styles/base/_fonts.scss b/src/styles/base/_fonts.scss
+--- a/src/styles/base/_fonts.scss	(revision 8b66c1a971a83dc13a185c7724c431427aaecc2f)
++++ b/src/styles/base/_fonts.scss	(revision 26763e409c8156824257c3c26a0bb2ae3cfad354)
+@@ -1,0 +1,5 @@
++.link {
++  text-decoration: none;
++  color: #2a5885;
++  cursor: pointer;
++}
+Index: src/styles/helpers/_variables.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/styles/helpers/_variables.scss b/src/styles/helpers/_variables.scss
+--- a/src/styles/helpers/_variables.scss	(revision 8b66c1a971a83dc13a185c7724c431427aaecc2f)
++++ b/src/styles/helpers/_variables.scss	(revision 26763e409c8156824257c3c26a0bb2ae3cfad354)
+@@ -1,0 +1,214 @@
++body {
++  font: 13px/1.5 sans-serif;
++  background-color: #edeef0;
++}
++
++.page {
++  border-radius: 4px;
++
++  &__my-account {
++    min-height: 365px;
++    height: auto;
++    width: auto;
++    float: left;
++    margin: 9px;
++    background-color: #fefefe;
++    padding: 15px 15px 6px 15px;
++  }
++
++  &__info {
++    margin: 9px 15px 0 15px;
++    width: 550px;
++    height: 305px;
++    display: inline-block;
++    padding: 10px 20px 0;
++    background-color: #fefefe;
++  }
++
++  &__photo {
++    width: 550px;
++    height: 190px;
++    padding: 0 20px;
++    display: inline-block;
++    background-color: #fff;
++    margin: 15px 15px 0 15px;
++  }
++}
++
++.my-account {
++  &__photo {
++    width: 200px;
++    height: 200px;
++    margin-bottom: 10px;
++  }
++
++  &__btn {
++    width: 200px;
++    height: 30px;
++    display: flex;
++    border-radius: 5px;
++    position: relative;
++    align-items: center;
++    justify-content: center;
++    background-color: #e5ebf1;
++
++    &:hover {
++      background-color: #d6e5f5;
++    }
++  }
++
++  &__btn-list {
++    padding-top: 10px;
++  }
++
++  &__btn-text {
++    color: #55677d;
++    text-align: center;
++    text-decoration: none;
++  }
++
++  &__btn-list-element {
++    height: 36px;
++    display: flex;
++    color: #55677d;
++    font-size: 13px;
++    padding-left: 16px;
++    padding-right: 16px;
++    align-items: center;
++    text-decoration: none;
++
++    &:hover {
++      text-decoration: none;
++      background-color: #aeb7c21f;
++    }
++  }
++
++  &__icon {
++    font-size: 20px;
++  }
++}
++
++.header {
++  padding: 0 0 7px;
++  position: relative;
++  border-bottom: 1px solid #dce1e6;
++
++  &__name {
++    font-size: 19px;
++    font-weight: 400;
++    line-height: 25px;
++    padding-left: 1px;
++    margin: -1px 0 -1px -1px;
++  }
++
++  &__check-online {
++    top: 0;
++    padding: 0;
++    right: 10px;
++    font-size: 12px;
++    margin: 5px 0 0 0;
++    text-align: center;
++    position: absolute;
++  }
++
++  &__status {
++    width: 100%;
++    margin: 5px 0;
++    display: block;
++    font-size: 13px;
++    line-height: 16px;
++  }
++}
++
++.main {
++  &__list {
++    padding: 0;
++  }
++
++  &__list-element {
++    height: 30px;
++    display: flex;
++    justify-content: end;
++
++    &_text {
++      width: 215px;
++      color: #84909c;
++    }
++
++    &_link {
++      color: #2a5885;
++      cursor: pointer;
++      text-decoration: none;
++    }
++  }
++
++  &__text-btn {
++    text-align: center;
++    margin: 20px 0 10px 0;
++  }
++
++    &_link {
++      color: #2a5885;
++      cursor: pointer;
++      text-decoration: none;
++    }
++  }
++
++.footer {
++  padding-top: 10px;
++  border-top: 1px solid #dce1e6;
++
++  &__list {
++    display: flex;
++    padding: 0 50px;
++    list-style: none;
++    justify-content: space-between;
++  }
++
++  &__list-element {
++    display: flex;
++    align-items: center;
++  }
++
++  &__count {
++    margin: 0;
++    font-size: 19px;
++    text-align: center;
++  }
++
++  &__text {
++    margin: 0;
++  }
++}
++
++.photo-block {
++  display: flex;
++  justify-content: space-between;
++
++  &__info {
++    display: flex;
++  }
++
++  &__text {
++    margin-right: 5px;
++
++    &_gray {
++      color: #84909c;
++      margin: auto 0;
++    }
++  }
++
++  &__photo-list {
++    display: flex;
++    justify-content: space-around;
++  }
++
++  &__photo-element {
++    list-style: none;
++  }
++
++  &__photo {
++    width: 123px;
++    height: 123px;
++  }
++}
+Index: src/views/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/views/index.html b/src/views/index.html
+--- a/src/views/index.html	(revision 8b66c1a971a83dc13a185c7724c431427aaecc2f)
++++ b/src/views/index.html	(revision 26763e409c8156824257c3c26a0bb2ae3cfad354)
+@@ -4,31 +4,123 @@
+         <meta charset="utf-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <title>gulp-scss-starter</title>
+-        <meta name="theme-color" content="#fff">
+-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+-        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+-        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+-        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+-        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+-        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+-        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+-        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+-        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+-        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+-        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+-        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+-        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+-        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+-        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+-        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+         <link rel="stylesheet" href="styles/main.css">
+     </head>
+     <body>
+-        @@include("../blocks/modules/header/header.html")
+-        @@include("../blocks/modules/footer/footer.html")
+-        <script src="js/main.js"></script>
+-        <script src="js/vendor.js"></script>
++    <div class='page__info'>
++        <header class='header'>
++            <h1 class='header__name'>Alexander Kravchenko</h1>
++            <p class='header__status'>Set status</p>
++            <p class='header__check-online'>online</p>
++        </header>
++        <div class='main'>
++            <ul class='main__list'>
++                <li class='main__list-element'>
++                    <p class='main__list-element_text'>Birthday:</p>
++                    <a href='#'class='link'><p>January 29</p> </a>
++                </li>
++                <li class='main__list-element'>
++                    <p class='main__list-element_text'>Current city:</p>
++                    <a href='#' class='link'> <p href='#'>Rostov-on-Don</p> </a>
++                </li>
++                <li class='main__list-element'>
++                    <p class='main__list-element_text'>Studien at:</p>
++                    <a href='#' class='link'> <p href='#'>ИТА ЮФУ (бывш. ТТИ ЮФУ</p> </a>
++                </li>
++                <li class='main__list-element'>
++                    <p class='main__list-element_text'>Website:</p>
++                    <a href='#' class='link'><p href='#'>https://vk.com/coolrails</p> </a>
++                </li>
++            </ul>
++            <a href='#' class='link'><p class='main__text-btn'>Show full information</p> </a>
++        </div>
++
++        <footer class='footer'>
++            <ul class='footer__list'>
++                <li class='footer__list-element'>
++                    <a href='#' class='link'>
++                        <p class="footer__count">317</p>
++                        <p class='footer__text'>friends</p>
++                    </a>
++                </li>
++                <li class='footer__list-element'>
++                    <a href='#' class='link'>
++                        <p class="footer__count">139</p>
++                        <p class='footer__text'>folowers</p>
++                    </a>
++                </li>
++                <li class='footer__list-element'>
++                    <a href='#' class='link'>
++                        <p class="footer__count">50</p>
++                        <p class='footer__text'>photos</p>
++                    </a>
++                </li>
++                <li class='footer__list-element'>
++                    <a href='#' class='link'>
++                        <p class="footer__count">8</p>
++                        <p class='footer__text'>tags</p>
++                    </a>
++                </li>
++                <li class='footer__list-element'>
++                    <a href='#' class='link'>
++                        <p class="footer__count">8</p>
++                        <p class='footer__text'>videos</p>
++                    </a>
++                </li>
++                <li class='footer__list-element'>
++                    <a href='#' class='link'>
++                        <p class="footer__count">106</p>
++                        <p class='footer__text'>tracks</p>
++                    </a>
++                </li>
++            </ul>
++        </footer>
++
++    </div>
++
++    <div class='page__my-account'>
++        <img class='my-account__photo' src='https://place-hold.it/200x200'>
++        <div class='my-account__btn'>
++            <a class='my-account__btn-text' href='#'><p>Edit</p></a>
++        </div>
++        <div class='my-account__btn-list'>
++            <a class='my-account__btn-list-element' href='#'>
++                <img class='my-account__icon' src='https://place-hold.it/24x24'>
++                <p class='my-account__btn-list-element'>Page statistics</p>
++            </a>
++            <a class='my-account__btn-list-element' href='#'>
++                <img class='my-account__icon' src='https://place-hold.it/24x24'>
++                <p class='my-account__btn-list-element'>Memories</p>
++            </a>
++            <a class='my-account__btn-list-element' href='#'>
++                <img class='my-account__icon' src='https://place-hold.it/24x24'>
++                <p class='my-account__btn-list-element'>Money transfers</p>
++            </a>
++        </div>
++    </div>
++
++    <div class='page__photo'>
++        <div class='photo-block'>
++            <div class='photo-block__info'>
++                <p class='photo-block__text'>My photos</p>
++                <p class='photo-block__text photo-block__text_gray'>50</p>
++            </div>
++            <p class='photo-block__text photo-block__text_gray'>show on map</p>
++        </div>
++        <ul class='photo-block__photo-list'>
++            <li class='photo-block__photo-element'>
++                <img class='photo-block__photo' src='https://place-hold.it/123x123'>
++            </li>
++            <li class='photo-block__photo-element'>
++                <img class='photo-block__photo' src='https://place-hold.it/123x123'>
++            </li>
++            <li class='photo-block__photo-element'>
++                <img class='photo-block__photo' src='https://place-hold.it/123x123'>
++            </li>
++            <li class='photo-block__photo-element'>
++                <img class='photo-block__photo' src='https://place-hold.it/123x123'>
++            </li>
++        </ul>
++    </div>
+     </body>
+ </html>
